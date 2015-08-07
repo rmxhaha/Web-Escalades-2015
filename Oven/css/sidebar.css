@@ -1,0 +1,23 @@
+.sidebar {
+	position : fixed;
+	z-index : 1;
+	left : 0px;
+	top : 0px;
+	height : 100%;
+}
+
+.sidebar-options-container {
+	padding-left : 20px;
+	width : 200px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-family : Arial;
+	font-size : 14px;
+	color : black;
+	margin : auto 0;
+}
+
+.sidebar-options-container li {
+	padding : 0px;
+}
