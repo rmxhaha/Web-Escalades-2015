@@ -3,7 +3,9 @@
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-	height : 100vh;
+}
+.row {
+	min-height : 100vh;
 }
 
 .wrapper#page1{
@@ -11,6 +13,11 @@
     padding: 40px;
 
  
+}
+
+.wrapper#page2 {
+	text-align : center;
+	padding-top : 40px;
 }
 
 img#page1{
