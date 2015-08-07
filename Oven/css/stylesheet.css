@@ -1,0 +1,22 @@
+
+.wrapper#page1 {
+    background-image:url(../images/bg.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container#page1{
+    text-align:center;
+    padding: 40px;
+
+ 
+}
+
+img#page1{
+    width: auto;
+    max-width: 400px;
+    margin: 20px auto;
+    margin-bottom:20px;
+}
+
