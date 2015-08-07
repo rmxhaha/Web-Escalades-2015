@@ -3,19 +3,28 @@
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+	height : 100vh;
 }
-.row {
-	min-height : 100vh;
+.row#page2 {
+	height : 50vh;
+}
+.row#page3 {
+	height : 50vh;
+}
+.wrapper {
+	margin : 0;
 }
 
 .wrapper#page1{
     text-align:center;
     padding: 40px;
-
- 
 }
 
 .wrapper#page2 {
+	text-align : center;
+	padding-top : 40px;
+}
+.wrapper#page3 {
 	text-align : center;
 	padding-top : 40px;
 }
