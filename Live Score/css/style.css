@@ -1,47 +1,73 @@
-/*
-Error: Invalid CSS after "	@include ": expected identifier, was "'borderbox';"
-        on line 47 of /Applications/XAMPP/xamppfiles/htdocs/Web-Escalades-2015/Live Score/sass/style.scss
+/*------------------------------------
+--------- Webforce Indonesia --------- 
+------------ & Candra Ramsi-----------
+------------------------------------*/
+/* Mixins */
+/* Global Attributes */
+body {
+  margin: 0;
+  padding: 0; }
 
-42: 	height:10%;
-43: 	width:100%;
-44: 	text-align:center;
-45: 	padding:1em;
-46: 	background:#ccc;
-47: 	@include 'borderbox';
-48: }
-49: /* Media Queries *\/
-50: @media (max-width: 720px){
-51:   .centerBox{
-52: 	  position:fixed;
+/* Contents */
+.wrapper {
+  background: #f3f3f3;
+  width: 100%;
+  height: 100%; }
 
-Backtrace:
-/Applications/XAMPP/xamppfiles/htdocs/Web-Escalades-2015/Live Score/sass/style.scss:47
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1096:in `tok!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:235:in `include_directive'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:219:in `special_directive'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:194:in `directive'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:661:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:642:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:635:in `ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"	@include \": expected identifier, was \"'borderbox';\"\A         on line 47 of /Applications/XAMPP/xamppfiles/htdocs/Web-Escalades-2015/Live Score/sass/style.scss\A \A 42: 	height:10%;\A 43: 	width:100%;\A 44: 	text-align:center;\A 45: 	padding:1em;\A 46: 	background:#ccc;\A 47: 	@include 'borderbox';\A 48: }\A 49: /* Media Queries */\A 50: @media (max-width: 720px){\A 51:   .centerBox{\A 52: 	  position:fixed;"; }
+.centerBox {
+  background: #525252;
+  position: fixed;
+  height: 600px;
+  width: 900px;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -450px; }
+
+.boxHeader {
+  position: absolute;
+  top: 0;
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  background: #ccc;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: borderbox; }
+
+.boxContent {
+  position: absolute;
+  top: 10%;
+  height: 90%;
+  width: 100%;
+  text-align: center; }
+
+.boxInside {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%; }
+
+.header {
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: borderbox; }
+
+/* Media Queries */
+@media (max-width: 960px) {
+  .centerBox {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0; } }
+
+/*# sourceMappingURL=style.css.map */

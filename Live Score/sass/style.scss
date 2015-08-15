@@ -4,7 +4,7 @@
 ------------------------------------*/
 
 /* Mixins */
-@mixin borderbox{
+@mixin borderbox (){
 	box-sizing:border-box;
 	-o-box-sizing:border-box;
 	-moz-box-sizing:border-box;
@@ -44,10 +44,34 @@ body{
 	text-align:center;
 	padding:1em;
 	background:#ccc;
-	@include 'borderbox';
+	@include borderbox;
 }
+
+.boxContent{
+	position:absolute;
+	top:10%;
+	height:90%;
+	width:100%;
+	text-align:center;
+}
+
+.boxInside{
+	position:relative;
+	float:left;
+	width:50%;
+	height:100%;
+}
+
+.header{
+	top:10%;
+	width:100%;
+	text-align:center;
+	padding:1em;
+	@include borderbox;
+}
+
 /* Media Queries */
-@media (max-width: 720px){
+@media (max-width: 960px){
   .centerBox{
 	  position:fixed;
 	  width:100%;
