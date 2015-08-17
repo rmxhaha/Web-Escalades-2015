@@ -3,6 +3,10 @@
 ------------ & Candra Ramsi-----------
 ------------------------------------*/
 /* Mixins */
+/* Font Faces */
+@font-face {
+  font-family: scoreboard;
+  src: url("../../Live Score/fonts/scorefont.ttf"); }
 /* Global Attributes */
 body {
   margin: 0;
@@ -59,6 +63,9 @@ body {
   -o-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: borderbox; }
+
+span #score {
+  font-family: scoreboard; }
 
 /* Media Queries */
 @media (max-width: 960px) {

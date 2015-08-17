@@ -45,9 +45,7 @@
 	
 	/* Put data to variables */
 	 if ( $r !== false && mysql_num_rows($r) > 0 ) 
-	  while ( mysql_fetch_assoc($r) ) {
-		  
-		global $sekolah1, $sekolah2,$score1, $score2;
+	  while ( $a = mysql_fetch_assoc($r) ) {
 		$sekolah1 = stripslashes ($a['sekolah1']);  
         $sekolah2 = stripslashes($a['sekolah2']);
 		$score1 = stripslashes($a['score1']);
@@ -61,15 +59,15 @@
             <div class="boxContent">
     			<div class="boxInside">
             		<div class="header">
-            		<? echo '$sekolah1'; ?>
+            		<?php echo "$sekolah1" ?>
             		</div>
-    			<span id ="score"><? echo '$score1'; ?></span>
+    			<span id ="score"><?php echo "$score1"; ?></span>
            		</div>
             	<div class="boxInside">
             		<div class="header">
-            		<? echo '$sekolah2'; ?>
+            		<?php echo "$sekolah2"; ?>
             		</div>
-    			<span id="score"><? echo '$score2'; ?></span>
+    			<span id="score"><?php echo "$score2"; ?></span>
             	</div>
              </div>
     	</div>

@@ -11,6 +11,12 @@
 	-webkit-box-sizing:borderbox;
 }
 
+/* Font Faces */
+
+@font-face {
+	font-family : scoreboard;
+	src : url('../../Live Score/fonts/scorefont.ttf');
+}
 
 /* Global Attributes */
 body{
@@ -68,6 +74,14 @@ body{
 	text-align:center;
 	padding:1em;
 	@include borderbox;
+}
+
+span{
+	
+	#score{
+		font-family:scoreboard;
+	}
+
 }
 
 /* Media Queries */
